@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesis: Implementación de GitHub en Páginas Web</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            scroll-behavior: smooth;
+            background-color: white;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+        }
+        .section-content {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        footer img {
+            width: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        pre {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            color: #333;
+        }
+        .nav-pills .nav-link {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 5px;
+        }
+        .nav-pills .nav-link.active {
+            background-color: white;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center mb-0">Implementación de GitHub en Páginas Web</h1>
+            <nav class="nav nav-pills justify-content-center mt-3">
+                <a class="nav-link" href="#intro">Intro</a>
+                <a class="nav-link" href="#why-github">Por qué GitHub</a>
+                <a class="nav-link" href="#implementation">Implementación</a>
+                <a class="nav-link" href="#example">Ejemplo</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="intro" class="section">
+        <div class="container">
+            <div class="section-content text-center">
+                <h2>Introducción</h2>
+                <p class="lead">GitHub es una plataforma revolucionaria que transforma la gestión de proyectos y el control de versiones, facilitando la colaboración entre desarrolladores de todo el mundo.</p>
+                <a href="#why-github" class="btn btn-custom btn-lg scroll-link">Descubre por qué usar GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="why-github" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="text-center mb-4">¿Por qué usar GitHub?</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-code-branch fa-3x mb-3"></i>
+                        <h4>Control de versiones eficiente</h4>
+                        <p>Mantén un historial completo de cambios en tu código.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-users fa-3x mb-3"></i>
+                        <h4>Colaboración en tiempo real</h4>
+                        <p>Trabaja con otros desarrolladores de forma seamless.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-tools fa-3x mb-3"></i>
+                        <h4>Integración con herramientas</h4>
+                        <p>Conecta GitHub con tus herramientas de desarrollo favoritas.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#implementation" class="btn btn-custom btn-lg scroll-link">Ver implementación</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="implementation" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="text-center mb-4">Implementación</h2>
+                <p class="lead text-center">La implementación de GitHub en un proyecto web incluye:</p>
+                <ol class="lead">
+                    <li>Creación de un repositorio.</li>
+                    <li>Subida de archivos y documentación.</li>
+                    <li>Uso de ramas para el desarrollo de nuevas características.</li>
+                    <li>Pull requests para revisión de código.</li>
+                </ol>
+                <div class="text-center mt-4">
+                    <a href="#example" class="btn btn-custom btn-lg scroll-link">Ver ejemplo de uso</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="example" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="text-center mb-4">Ejemplo de uso</h2>
+                <p class="lead text-center">Para ilustrar cómo GitHub se puede integrar en el flujo de trabajo de desarrollo web, a continuación se presenta un breve tutorial:</p>
+                <pre class="mt-4">
+<code>
+# Inicializar un nuevo repositorio
+git init
+
+# Agregar todos los archivos al staging
+git add .
+
+# Realizar el primer commit
+git commit -m "Primer commit"
+
+# Subir los cambios al repositorio remoto
+git push origin main
+</code>
+                </pre>
+                <div class="text-center mt-4">
+                    <a href="#intro" class="btn btn-custom">Volver a la Introducción</a>
+                    <a href="#why-github" class="btn btn-custom">Por qué usar GitHub</a>
+                    <a href="#implementation" class="btn btn-custom">Volver a Implementación</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="/api/placeholder/30/30" alt="Logo de GitHub">
+        <p class="mb-0">&copy; 2024 - Tesis sobre la Implementación de GitHub en Páginas Web</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.scroll-link').on('click', function(event) {
+                event.preventDefault();
+                var target = $($(this).attr('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - $('header').outerHeight()
+                    }, 1000);
+                }
+            });
+
+            // Activar nav-link según la sección visible
+            $(window).on('scroll', function() {
+                var scrollPosition = $(window).scrollTop();
+
+                $('.section').each(function() {
+                    var topOffset = $(this).offset().top - $('header').outerHeight() - 10;
+                    var bottomOffset = topOffset + $(this).outerHeight();
+
+                    if (scrollPosition >= topOffset && scrollPosition < bottomOffset) {
+                        var id = $(this).attr('id');
+                        $('.nav-link').removeClass('active');
+                        $('.nav-link[href="#'+ id +'"]').addClass('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
